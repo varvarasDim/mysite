@@ -1,5 +1,2 @@
 # MySinglePageSite
-
-The code from site
-
-dimitrisvarvaras.eu
+The code from site dimitrisvarvaras.eu
