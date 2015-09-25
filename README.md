@@ -1,3 +1,4 @@
 # MySinglePageSite
 
-Simple single page site that uses jQuery for some animations that are presented
+Simple single page site with some basic animations and design
+Page created using jQuery, Chart.js and Kameleon icons
