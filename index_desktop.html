@@ -22,7 +22,7 @@
 </div>
 <div id="generalFooter">
 		
-         Page created by <b>Dimitris Varvaras</b> using <a class="footer" href="https://jquery.com/">jQuery</a>, <a class="footer" href="http://www.chartjs.org/">Chart.js</a> and 
+         Page created by <b>Dimitrios Varvaras</b> using <a class="footer" href="https://jquery.com/">jQuery</a>, <a class="footer" href="http://www.chartjs.org/">Chart.js</a> and 
 		 <a class="footer" href="http://www.kameleon.pics/free-icons-pack.html">Kameleon icons</a>
 		
 &ensp;&ensp; 
@@ -31,7 +31,7 @@
 		
 		<a href="#about" class="header">
 		
-         Dimitris
+         Dimitrios
 		 <img src="Coding-Html.svg" style="position:relative;top:5px;" height="48"/>
 		  Varvaras
 		</a>
@@ -49,56 +49,59 @@
 	
 <a href="#about">
     <div id="aboutHeader">
-        <span style="position:relative;top:25px;font-size:20px">Info</span>
+        <span style="position:relative;display:table-cell;vertical-align:middle;font-size:20px">Info</span>
     </div>
 </a>
 
 <a href="#studies">
     <div id="studiesHeader">
-        <span style="position:relative;top:25px;font-size:20px">Studies </span>
+        <span style="position:relative;display:table-cell;vertical-align:middle;font-size:20px">Studies </span>
     </div>
 </a>
 
 <a href="#skills">
 	<div id="skillsHeader">
-        <span style="position:relative;top:25px;font-size:20px">Skills </span>
+			<span style="position:relative;display:table-cell;vertical-align:middle;font-size:20px">Skills </span>
     </div>
 </a>
 
 <a href="#projects">
     <div id="projectsHeader">
-        <span style="position:relative;top:25px;font-size:20px">Projects</span>
+        <span style="position:relative;display:table-cell;vertical-align:middle;font-size:20px">Projects</span>
     </div>
 </a>
 
 <a href="#contact">
     <div id="contactHeader">
-        <span style="position:relative;top:25px;font-size:20px">Contact</span>
+        <span style="position:relative;display:table-cell;vertical-align:middle;font-size:20px">Contact</span>
     </div>
 </a>
 
 <div id="page-wrap">
     <div id="pageAbout" align="center">
-        <br /><br />
+		<br />
+		<br />
+		<br />
+		<a name="about"></a>
         <h2>
 		Info
 		
 		</h2>
-        <a id="about"></a>
+		<br />
         <div class="page-padding"></div>
 
 		
 		<img alt="man" id="ImgMan" src="Man-16.svg" height="256" width="256" />
 		<br />
 		
-        I am a Computer Engineer, who enjoys to design and build state of the art applications, always trying to find the most efficient solution to any problem I encounter. My main goal is to keep constantly evolving my knowledge and skills over software development. My eagerness to learn new things, combined with my nature of finding ways in order to satisfy my curiosity about how things work, are my main and most important characteristics. 
+        I am a Software Engineer, who enjoys to design and build state of the art applications, always trying to find the most efficient solution to any problem I encounter. My main goal is to keep constantly evolving my knowledge and skills over software development. My eagerness to learn new things, combined with my nature of finding ways in order to satisfy my curiosity about how things work, are my main and most important characteristics. 
 		I currently live in Greece, where I work as a Software Developer.
     </div>
     
     <div id="pageStudies" align="center">
-        <h2>Studies</h2>
-		
-        <a id="studies"></a>
+		<a name="studies"></a>
+	    <h2>Studies</h2>
+		<br />
         <div class="page-padding"></div>
 		
 		<img alt="studies" id="ImgStudies" src="Mind-Map-Paper.svg" height="256" width="256" /><br />
@@ -109,8 +112,9 @@
     </div> 
 
     <div id="pageSkills" align="center">
+		<a name="skills"></a>
         <h2>Skills</h2>
-        <a id="skills"></a>
+        <br />
         <div class="page-padding"></div>
 		<table>
 		<tr>
@@ -130,8 +134,9 @@
     </div> 
 	
     <div id="pageProjects" align="center">
+		<a name="projects"></a>
         <h2 align="center">Projects</h2>
-        <a id="projects"></a>
+		<br />
         <div class="page-padding"></div>
 
         <table>
@@ -276,9 +281,9 @@ hotspots, distributed at various locations in the city of Patras (Greece) <b>[An
 
 	
     <div id="pageContact">
-        <br /><br />
+		<a name="contact"></a> 
         <h2 align="center">Contact</h2>
-        <a id="contact"></a> 
+        <br />
         <div class="page-padding"></div>
         <table id="socialTable">
 			<tr>
@@ -289,7 +294,8 @@ hotspots, distributed at various locations in the city of Patras (Greece) <b>[An
 			<td><a href="https://github.com/varvarasDim" target="_blank"><div id="github" class="rotate"><span style="font-size:20px"></span></div></a></td>
 			</tr>
         </table>
-    </div> 
+		<br />
+    </div>
 
 </div> 
 
@@ -453,7 +459,7 @@ hotspots, distributed at various locations in the city of Patras (Greece) <b>[An
 	  
 	  
   
-	$('#aboutHeader, #studiesHeader, #skillsHeader, #projectsHeader, #contactHeader').hover(
+	$('#aboutHeader, #studiesHeader, #skillsHeader, #projectsHeader, #contactHeader, #moufa').hover(
         function () {
             $(this).animate({ width: '+=20px', height: '+=20px', top: '-=10px', left: '-=10px' }, 500); 
         }, 
@@ -474,7 +480,7 @@ hotspots, distributed at various locations in the city of Patras (Greece) <b>[An
 		if ( filterPath(location.pathname) == filterPath(this.pathname)
 		&& location.hostname == this.hostname
 		&& this.hash.replace(/#/,'') ) {
-		  var $targetId = $(this.hash), $targetAnchor = $('[id=' + this.hash.slice(1) +']');
+		  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
 		  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
 		   if ($target) {
 			 var targetOffset = $target.offset().top;

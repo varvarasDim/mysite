@@ -168,6 +168,7 @@ h2 {
 	
 	}
  #projectsHeader{
+	display: table;
 	position:fixed;
 	top:380px;
 	left:30px; 
@@ -180,6 +181,7 @@ h2 {
 	box-shadow: 0 0 10px #3B97D3;
 	}
  #aboutHeader {
+	display: table;
 	position:fixed;
 	top:80px;
 	left:30px;
@@ -194,6 +196,7 @@ h2 {
 	}
 
  #contactHeader {
+	display: table;
 	position:fixed;
 	top:480px;
 	left:30px;
@@ -208,6 +211,7 @@ h2 {
 	}
 	
 #studiesHeader {
+	display: table;
 	position:fixed;
 	top:180px;
 	left:30px;
@@ -220,6 +224,7 @@ h2 {
 	}
 	
 #skillsHeader {
+	display: table;
 	position:fixed;
 	top:280px;
 	left:30px;
@@ -230,6 +235,7 @@ h2 {
 	text-align:center;
 	box-shadow: 0 0 10px #3B97D3;
 	}
+	
 	
 	
 	
