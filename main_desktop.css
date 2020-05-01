@@ -2,11 +2,16 @@
 
 *{ margin: 0 auto;}
 
+@font-face {
+	font-family: 'Cabin';
+	src: url('Cabin-Regular.otf'); 
+}
+
 
 body {
 	background:whitesmoke; 
 	margin: 0 auto; 
-	font-family: Open Sans, times,serif; 
+	font-family: 'Cabin'; 
 	height:3400px;
 	
 	color: #2C3E50;
@@ -420,7 +425,7 @@ a {
 	height:800px;
 	width:900px;
 	background:whitesmoke;
-    font-size: 150%;
+    font-size: 160%;
 	}
 #pageWidth{
 	height:1px;
@@ -433,7 +438,7 @@ a {
 	height:250px;
 	width:1000px;
 	background:whitesmoke;
-	font-size: 150%;
+	font-size: 160%;
 	}
 
 .page-padding {height:0px; width:100%;}

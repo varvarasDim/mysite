@@ -1,1 +1,0 @@
-import text descriptions on projects, change cv to add it
